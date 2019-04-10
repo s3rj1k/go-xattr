@@ -1,4 +1,4 @@
-module xattr
+module go-xattr
 
 go 1.12
 

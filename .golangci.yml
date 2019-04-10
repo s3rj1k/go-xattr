@@ -28,9 +28,3 @@ linters-settings:
     for-loops: true
 linters:
   enable-all: true
-  disable:
-    - dupl
-    - goimports
-    - gochecknoglobals
-    - unused
-    - deadcode
