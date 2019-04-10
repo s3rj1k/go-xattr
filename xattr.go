@@ -1,4 +1,4 @@
-package xattr
+package xattr // import "github.com/s3rj1k/go-xattr"
 
 import (
 	"os"
