@@ -1,4 +1,4 @@
-module go-xattr
+module github.com/s3rj1k/go-xattr
 
 go 1.12
 
