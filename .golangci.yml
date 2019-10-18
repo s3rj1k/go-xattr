@@ -2,13 +2,14 @@ run:
   deadline: 5m
   skip-dirs:
     - autogen/.*
+    - vendor/.*
 linters-settings:
   errcheck:
     check-type-assertions: true
   govet:
     check-shadowing: true
   gocyclo:
-    min-complexity: 26
+    min-complexity: 50
   maligned:
     suggest-new: true
   depguard:
@@ -20,6 +21,9 @@ linters-settings:
     locale: US
   lll:
     line-length: 200
+  funlen:
+    lines: 500
+    statements: 500
   unparam:
     # call graph construction algorithm (cha, rta). In general, use cha for libraries,
     # and rta for programs with main packages. Default is cha.
@@ -28,3 +32,5 @@ linters-settings:
     for-loops: true
 linters:
   enable-all: true
+  disable:
+    - dupl

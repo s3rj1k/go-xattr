@@ -6,7 +6,7 @@ import (
 	"golang.org/x/sys/unix"
 )
 
-// Todo: Test on XFS
+// ToDo: Test on XFS
 const (
 	// FsIocGetFlags is FS_IOC_GETFLAGS from /usr/include/linux/fs.h (man ioctl_list)
 	FsIocGetFlags = 0x80086601
